@@ -181,10 +181,7 @@ def install_webui():
         print("N) None (I want to run models in CPU mode)")
         print()
 
-        choice = input("Input> ").upper()
-        while choice not in 'ABCDN':
-            print("Invalid choice. Please try again.")
-            choice = input("Input> ").upper()
+        choice = "N"
 
     gpu_choice_to_name = {
         "A": "NVIDIA",
